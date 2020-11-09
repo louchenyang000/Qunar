@@ -4,27 +4,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>往哪儿窜首页</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
 
 <body>
     <header>
         <div class="header-top">
-            <span>请<a href=""> 登录 </a>或<a href=""> 免费注册 </a></span>丨
-            <a href=""><i class="xinxi"></i> 消息中心 <i class="xia"></i></a>丨
-            <span>查看订单 <i class="xia"></i></span>丨
-            <span>积分商城</span>丨
-            <span>联系客服</span>丨
-            <b></b>1
+            <span>请
+                <a href=""> 登录 </a>
+                或<a href=""> 免费注册 </a>
+            </span><i class="iconfont iconshu"></i>
+            <span><a href="">
+                <b class="xinxi"></b> 消息中心
+                <b class="xia"></b>
+            </a>
+            </span><i class="iconfont iconshu" style="margin-right:0;"></i>
+            <span>
+                <a href="">
+                查看订单 
+                    <b class="xia" id="caidan"></b>
+                    <ul>
+                        <a href="">
+                            <li>机票订单</li>
+                        </a>
+                        <a href="">
+                            <li>酒店订单</li>
+                        </a>
+                        <a href="">
+                            <li>公寓订单</li>
+                        </a>
+                        <a href="">
+                            <li>团购订单</li>
+                        </a>
+                        <a href="">
+                            <li>度假订单</li>
+                        </a>
+                        <a href="">
+                            <li>门票订单</li>
+                        </a>
+                        <a href="">
+                            <li>火车票订单</li>
+                        </a>
+                        <a href="">
+                            <li>汽车票订单</li>
+                        </a>
+                        <a href="">
+                            <li>车车订单</li>
+                        </a>
+                        <a href="">
+                            <li>Q商城订单</li>
+                        </a>
+                        <a href="">
+                            <li>当地人订单</li>
+                        </a>
+                        <a href="">
+                            <li>金融订单</li>
+                        </a>
+                        <a href="">
+                            <li>礼品卡订单</li>
+                        </a>
+                    </ul>
+                </a>
+                
+            </span>
+            <i class="iconfont iconshu" style="margin-left:0;"></i>
+            <span><a href="">积分商城</a></span>
+            <i class="iconfont iconshu"></i>
+            <span><a href="">联系客服</a></span>
+            <i class="iconfont iconshu"></i>
+            <em class="iconfont iconshouji">
+                <div><img src="images/ewm1.png" alt="">
+                    <p>扫码下载去哪儿APP<strong><br>领500元新人大礼包</strong></p>
+                </div>
+            </em>
+            <em class="iconfont iconweixin">
+                <div><img src="images/ewm2.png" alt="">
+                    <p>关注去哪儿公众号<br>优惠信息立刻知晓</p>
+                </div>
+            </em>
         </div>
-        <div class="header-bottom"></div>
+        <div class="header-bottom">
+            <a href=""><img src="images/logo.png" alt="图片加载失败" title="去哪旅游搜索引擎Qunar.com"></a>
+            <div class="header-bottom1"><input type="text" placeholder="搜索目的地"><i class="iconfont iconsousuo"></i></div>
+            <div class=" header-bottom2 ">
+                <div><i class="iconfont iconkefu"></i>
+                    <p>24小时</p>
+                </div>
+                <ul>
+                    <li><span>国内客服</span><span>95117</span></li>
+                    <li><span>国际客服</span><span>(+8610)82872677</span></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <nav></nav>
-    <main></main>
-    <section></section>
+
+    <nav>
+        <ul class="daohang">
+            <a href="">
+                <li>首页</li>
+            </a>
+            <a href="">
+                <li>机票</li>
+            </a>
+            <a href="">
+                <li>酒店</li>
+            </a>
+            <a href="">
+                <li>火车站</li>
+            </a>
+            <a href="">
+                <li>度假</li>
+            </a>
+            <a href="">
+                <li>团购</li>
+            </a>
+            <a href="">
+                <li>门票</li>
+            </a>
+            <a href="">
+                <li>当地人</li>
+            </a>
+            <a href="">
+                <li>汽车票</li>
+            </a>
+            <a href="">
+                <li>攻略</li>
+            </a>
+            <a href="">
+                <li>行程设计</li>
+            </a>
+        </ul>
+    </nav>
+    <menu>
+        <div class="menu-one">境外直通车</div>
+        <span class="triangle"></span>
+        <div>
+            <a href="">
+                <i class="iconfont icondiqiu"></i><span>境外酒店</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="iconfont icontieta"></i><span>海外玩乐</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="iconfont icondujiafangan"></i><span>出境游</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="iconfont iconbaogouwu"></i><span>海外购物</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="iconfont iconcolumn_07"></i><span>签证</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="iconfont iconFavorit-Network"></i><span>出境WI-FI</span>
+            </a>
+        </div>
+    </menu>
+    <div class="main">
+        <main>
+            <div class="main-left">
+                <ul>
+                    <li>机票</li>
+                    <li>酒店</li>
+                    <li>火车票</li>
+                    <li>度假</li>
+                    <li>门票</li>
+                    <li>团购</li>
+                    <li>自由行</li>
+                </ul>
+                <div class="main-left-content">
+                    <div class="main-left-left">
+                        <div class="main-left1">
+                            <span>国内机票</span>
+                            <span>国际·港澳台机票</span>
+                        </div>
+                        <div class="main-left2">
+                            <a href=""><i class="iconfont iconyanchupiaoyouxianquan"></i><span>出票状态查询</span></a>
+                            <a href=""><i class="iconfont iconkaipiao-icon-"></i><span>退票改签</span></a></div>
+                    </div>
+                    <div class="main-left-right">
+                        <div class="main-left3">
+                            <div class="main-left4">
+                                <input type="radio" name="killOrder" value="1" id="killOrder1" checked/>
+                                <label for="killOrder1">单程</label>
+                            </div>
+                            <div class="main-left4">
+                                <input type="radio" name="killOrder" id="killOrder2" value="0" />
+                                <label for="killOrder2">往返</label>
+                            </div>
+                        </div>
+                        <div class="main-left5">
+                            <div>
+                                <span>出发</span><input type="text" value="北京"><b></b>
+                            </div>
+                            <div class="main-left5-img">
+                                <a href="#" rel="nofollow" title="调换出发地和目的地">换</a>
+                            </div>
+                            <div>
+                                <span>日期</span><input type="text" value="2020-11-09"><span>后天</span><b></b>
+                            </div>
+                            <div>
+                                <span>到达</span><input type="text" placeholder="输入国家/地区/城市/机场"><b></b>
+                            </div>
+                            <div>
+                                <span>日期</span><input type="text"><b></b>
+                            </div>
+                        </div>
+                        <div class="main-left6">
+                            <p>可实时搜索 <span>28万</span> 条国内国际航线</p>
+                            <div>立即搜索</div>
+                        </div>
+                    </div>
+                    <img src="images/flight_bar2.png" alt="">
+                </div>
+            </div>
+            <div class="main-right">
+            </div>
+        </main>
+        <div class="subNav">
+            <span class="nav-border">国内低价机票</span><span>国际·港澳台低价航线(单程)</span><span>国际港澳台低价(往返)</span><a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
+        </div>
+        <section>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>昆明</span>
+                    <p>11月24日</p>
+                    <strong>￥196<span style="font-size:14px;font-weight: 200;"> 起 <em>0.7折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>成都</span>
+                    <p>11月29日</p>
+                    <strong>￥145<span style="font-size:14px;font-weight: 200;"> 起 <em>0.7折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>上海</span>
+                    <p>11月18日</p>
+                    <strong>￥310<span style="font-size:14px;font-weight: 200;"> 起 <em>2折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>西安</span>
+                    <p>11月28日</p>
+                    <strong>￥856<span style="font-size:14px;font-weight: 200;"> 起 <em>1.3折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>重庆</span>
+                    <p>11月10日</p>
+                    <strong>￥188<span style="font-size:14px;font-weight: 200;"> 起 <em>1折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>深圳</span>
+                    <p>11月14日</p>
+                    <strong>￥241<span style="font-size:14px;font-weight: 200;"> 起 <em>0.9折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>广州</span>
+                    <p>11月23日</p>
+                    <strong>￥165<span style="font-size:14px;font-weight: 200;"> 起 <em>0.7折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>杭州</span>
+                    <p>11月28日</p>
+                    <strong>￥204<span style="font-size:14px;font-weight: 200;"> 起 <em>0.9折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>海口</span>
+                    <p>11月11日</p>
+                    <strong>￥241<span style="font-size:14px;font-weight: 200;"> 起 <em>0.8折</em></span></strong><b>立抢</b></a>
+            </div>
+            <div>
+                <a href="">
+                    <span>北京</span><i class="iconfont icondanchengduan"></i><span>郑州</span>
+                    <p>11月16日</p>
+                    <strong>￥340<span style="font-size:14px;font-weight: 200;"> 起 <em>2.7折</em></span></strong><b>立抢</b></a>
+            </div>
+        </section>
+
+        <div class="subNav">
+            <span class="nav-border">国内酒店必住榜</span><span>国内酒店推荐</span><a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
+        </div>
+        <div class="photos">
+            <div class="photo1">
+                <a href="">
+                必住主题酒店榜单<i class="iconfont iconyou1"></i><br>
+                    <span>主题酒店，享受绝佳体验</span>
+            </a>
+            </div>
+            <div>
+                <a href="">
+                必住商务酒店榜单<i class="iconfont iconyou1"></i><br>
+                    <span>品质商旅，品味随行</span>
+            </a></div>
+            <div>
+                <a href="">
+                必住客栈酒店榜单<i class="iconfont iconyou1"></i><br>
+                    <span>快来享受客栈风情吧</span>
+            </a></div>
+            <div>
+                <a href="">
+                必住情侣酒店榜单<i class="iconfont iconyou1"></i><br>
+                    <span>和你的他/她，尽享旅途中的专属私人空间</span>
+            </a></div>
+            <div>
+                <a href="">
+                必住民宿酒店榜单<i class="iconfont iconyou1"></i><br>
+                    <span>住民宿，体检纯正城市风情</span>
+            </a></div>
+        </div>
+        <div class="subNav">
+            <span class="nav-border">当季景点门票</span><span>特惠门票</span><a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
+        </div>
+        <div class="jingdian">
+            <div class="jingdian1">
+                <h3>热门景点</h3>
+                <ul class="jingdian-list">
+                    <li>
+                        <a href="">开封东京极地海洋馆</a>
+                    </li>
+                    <li>
+                        <a href="">嵩山</a>
+                    </li>
+                    <li>
+                        <a href="">重渡沟</a>
+                    </li>
+                    <li>
+                        <a href="">南湾湖</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳老君山</a>
+                    </li>
+                    <li>
+                        <a href="">环翠谷</a>
+                    </li>
+                    <li>
+                        <a href="">竹林长寿山景区</a>
+                    </li>
+                    <li>
+                        <a href="">尧山</a>
+                    </li>
+                    <li>
+                        <a href="">大宋东京梦华</a>
+                    </li>
+                    <li>
+                        <a href="">锦绣云台温泉山庄</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳龙门海洋馆</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jingdian1">
+                <h3>热门景点</h3>
+                <ul class="jingdian-list">
+                    <li>
+                        <a href="">开封东京极地海洋馆</a>
+                    </li>
+                    <li>
+                        <a href="">嵩山</a>
+                    </li>
+                    <li>
+                        <a href="">重渡沟</a>
+                    </li>
+                    <li>
+                        <a href="">南湾湖</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳老君山</a>
+                    </li>
+                    <li>
+                        <a href="">环翠谷</a>
+                    </li>
+                    <li>
+                        <a href="">竹林长寿山景区</a>
+                    </li>
+                    <li>
+                        <a href="">尧山</a>
+                    </li>
+                    <li>
+                        <a href="">大宋东京梦华</a>
+                    </li>
+                    <li>
+                        <a href="">锦绣云台温泉山庄</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳龙门海洋馆</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jingdian1">
+                <h3>热门景点</h3>
+                <ul class="jingdian-list">
+                    <li>
+                        <a href="">开封东京极地海洋馆</a>
+                    </li>
+                    <li>
+                        <a href="">嵩山</a>
+                    </li>
+                    <li>
+                        <a href="">重渡沟</a>
+                    </li>
+                    <li>
+                        <a href="">南湾湖</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳老君山</a>
+                    </li>
+                    <li>
+                        <a href="">环翠谷</a>
+                    </li>
+                    <li>
+                        <a href="">竹林长寿山景区</a>
+                    </li>
+                    <li>
+                        <a href="">尧山</a>
+                    </li>
+                    <li>
+                        <a href="">大宋东京梦华</a>
+                    </li>
+                    <li>
+                        <a href="">锦绣云台温泉山庄</a>
+                    </li>
+                    <li>
+                        <a href="">洛阳龙门海洋馆</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <footer></footer>
-    <div class="copyright"></div>
+    <div class="copyright "></div>
+    <script src="js/jquery.1.11.3.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>
