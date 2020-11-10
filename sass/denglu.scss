@@ -1,0 +1,291 @@
+body,
+ul,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend,
+figure,
+figcaption,
+menu,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+
+/* 以上内容为样式重置 */
+
+header {
+    height: 41px;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    .header-top {
+        width: 1225px;
+        margin: 0 auto;
+        text-align: right;
+        a {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 41px;
+            margin: 0 10px;
+        }
+        .header-color {
+            color: #ff7c00;
+        }
+    }
+}
+
+menu {
+    height: 130px;
+    width: 1225px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+    padding-top: 30px;
+    display: flex;
+    box-sizing: border-box;
+    div {
+        width: 200px;
+        height: 76px;
+        cursor: pointer;
+        background: url(../images/login-logo.png) no-repeat center/cover;
+    }
+    h3 {
+        display: inline-block;
+        height: 22px;
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}
+
+main {
+    width: 1225px;
+    height: 553px;
+    margin: 0 auto;
+    display: flex;
+    .main-left {
+        width: 781px;
+        padding-top: 80px;
+        padding-left: 90px;
+        box-sizing: border-box;
+        div {
+            background: url(https://source.qunarzz.com/usercenter/login/qrcode_login_ad.png) no-repeat;
+            width: 144px;
+            height: 177px;
+            float: left;
+            padding-right: 44px;
+        }
+        dt {
+            font-size: 24px;
+            color: #009bb3;
+        }
+        dd {
+            margin-top: 10px;
+            line-height: 24px;
+            color: #999;
+        }
+    }
+    .main-right {
+        width: 445px;
+        height: 553px;
+        background: #f6f6f6;
+        position: relative;
+        .right1 {
+            text-align: center;
+            position: absolute;
+            padding-left: 120px;
+            left: 0;
+            div {
+                position: absolute;
+                width: 180px;
+                top: 10px;
+                right: -60px;
+                border: 1px solid #cecece;
+                background: #fff;
+                img {
+                    margin: 0;
+                    display: inline-block;
+                }
+                p {
+                    display: inline-block;
+                    color: #ff9800;
+                    padding: 5px;
+                }
+                i {
+                    position: absolute;
+                    background: #fff;
+                    border-color: #fff;
+                    right: -5px;
+                    top: 10px;
+                    border: 5px solid transparent;
+                    border-right: 0;
+                    border-left: 5px solid #d8d8d8;
+                }
+            }
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 80px;
+                margin-bottom: 50px;
+            }
+            img {
+                margin: 0 auto 100px;
+            }
+            a {
+                color: #9e9e9e;
+            }
+        }
+        #right2 {
+            text-align: center;
+            display: none;
+            span {
+                display: block;
+                font-size: 30px;
+                padding: 50px;
+            }
+            div {
+                margin: 20px;
+                input[type=text] {
+                    width: 200px;
+                    height: 30px;
+                }
+            }
+            .yanzhengma {
+                display: flex;
+                input[type=text] {
+                    width: 100px;
+                    margin-left: 100px;
+                }
+                .photo {
+                    width: 80px;
+                    height: 35px;
+                    border: 1px solid #cccccc;
+                    margin-left: 12px;
+                    margin-top: 3px;
+                    background: url(../images/image.jfif) no-repeat center/cover;
+                }
+            }
+            #btn1 {
+                width: 200px;
+                height: 40px;
+                background: #ff8200;
+                border: 0;
+                color: #fff;
+            }
+            #btn1:hover {
+                background: orange;
+            }
+        }
+        #right3 {
+            width: 50px;
+            height: 50px;
+            background: url(../images/qr-2.png) 0 0 no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.copyright {
+    width: 1225px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid red;
+    div {
+        color: #999999;
+        margin-top: 12px;
+        a {
+            color: #999999;
+        }
+    }
+    .copyright-tit {
+        line-height: 40px;
+        color: #999999;
+        a {
+            display: inline-block;
+            padding: 0 10px;
+            color: #999999;
+        }
+        a:hover {
+            color: red;
+        }
+    }
+    .text {
+        display: inline-block;
+    }
+    .copyright-photo {
+        margin: 20px auto;
+        a {
+            display: inline-block;
+            height: 32px;
+            margin: 0 3px;
+            img {
+                height: 32px;
+            }
+        }
+        a:nth-of-type(2) {
+            width: 52px;
+            background: url(../images/footer3.png) -106px 0 no-repeat;
+        }
+        a:nth-of-type(3) {
+            width: 85px;
+            background: url(../images/footer3.png) -523px 0 no-repeat;
+        }
+        a:nth-of-type(4) {
+            width: 100px;
+            background: url(../images/footer3.png) -614px 0 no-repeat;
+        }
+    }
+}
