@@ -609,11 +609,11 @@ menu {
             font-weight: 900;
             color: #00ccdc;
         }
-        span:hover {
-            border-bottom: 3px solid #00d0d4;
-            font-weight: 900;
-            color: #00ccdc;
-        }
+        // span:hover {
+        //     border-bottom: 3px solid #00d0d4;
+        //     font-weight: 900;
+        //     color: #00ccdc;
+        // }
         a {
             float: right;
             color: #757575;
@@ -678,6 +678,16 @@ menu {
                 }
             }
         }
+    }
+    .section {
+        height: 317px;
+        display: none;
+    }
+    .section:nth-of-type(2) {
+        background: red;
+    }
+    .section:nth-of-type(3) {
+        background: pink;
     }
     .photos {
         height: 412px;

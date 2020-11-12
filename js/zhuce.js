@@ -49,7 +49,7 @@ window.onload = function() {
             "username": $("#phone").val(),
             "password": $("#password").val()
         }, data => {
-            if (data.code != 1 && flas6 != false) {
+            if (data.code != 1 && flas6 == false) {
                 // console.log(data)
                 alert("该手机号已经注册，注册失败")
             } else if (data.code != 1 && flas6 == true && flas6 == false) {

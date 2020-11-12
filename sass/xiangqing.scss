@@ -1,0 +1,308 @@
+body,
+ul,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend,
+figure,
+figcaption,
+menu,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+
+/* 以上内容为样式重置 */
+
+html,
+body {
+    height: 100%;
+}
+
+body,
+header,
+.header-top,
+.header-bottom,
+.daohang,
+.main,
+footer {
+    margin: 0 auto;
+}
+
+header {
+    height: 34px;
+    // background: pink;
+    .header-top {
+        height: 27px;
+        width: 1500px;
+        // background: #0ca047;
+        text-align: right;
+        position: relative;
+        padding-top: 7px;
+        span {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid #fff;
+            border-bottom: 0;
+            &:nth-of-type(1) a {
+                color: #00bcd4;
+            }
+            a {
+                line-height: 20px;
+            }
+            a:hover {
+                color: #00bcd4;
+            }
+            ul {
+                width: 83px;
+                position: absolute;
+                left: 0;
+                top: 20px;
+                text-align: left;
+                // padding-left: 5px;
+                display: none;
+                li {
+                    padding-left: 8px;
+                    line-height: 20px;
+                    margin-top: 5px;
+                }
+            }
+            &:nth-of-type(3) {
+                display: inline-block;
+                width: 85px;
+                padding-left: 8px;
+                text-align: left;
+            }
+            &:nth-of-type(3):hover {
+                border: 1px solid #cecece;
+                border-bottom: 0;
+                a:nth-of-type(1) {
+                    color: #00bcd4;
+                }
+            }
+            &:hover ul {
+                display: block;
+                border: 1px solid #cecece;
+                left: -1px;
+                border-top: 0;
+                background: #fff;
+                li:hover {
+                    background: blue;
+                    color: #fff;
+                    padding-left: 8px;
+                }
+            }
+        }
+        .xinxi {
+            width: 12px;
+            height: 10px;
+            display: inline-block;
+            background: url(//source.qunarzz.com/common/hf/header_v13.png) -30px -153px no-repeat;
+        }
+        .xia {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            background: url(//source.qunarzz.com/common/hf/header_new_v7.png) -153px -21px no-repeat;
+            position: relative;
+        }
+        i {
+            width: 1px;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            color: #e5e5e5;
+            margin: 0 5px;
+        }
+        em {
+            cursor: pointer;
+            position: relative;
+            color: #00bcd4;
+            &:nth-of-type(2) {
+                margin-left: 16px;
+            }
+            div {
+                width: 112px;
+                position: absolute;
+                right: 0;
+                padding: 20px;
+                display: none;
+                background: #fff;
+                border: 1px solid #c4c4c4;
+                box-shadow: 0 2px 5px#c4c4c4;
+                img {
+                    margin: 0 auto;
+                }
+                p {
+                    margin-top: 5px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #000;
+                    strong {
+                        font-size: 12px;
+                        color: orange;
+                        font-style: normal;
+                    }
+                }
+            }
+            &:hover {
+                div {
+                    top: 18px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(90deg, #00d0d4 19%, #00c5c3 58%, #9effa4 100%);
+    .daohang {
+        width: 1500px;
+        display: flex;
+        li {
+            height: 55px;
+            width: 75px;
+            color: #fff;
+            text-align: center;
+            line-height: 55px;
+            font-size: 20px;
+            white-space: pre;
+            font-weight: 900;
+        }
+        a:nth-child(1) {
+            background: #00bcd4;
+        }
+        li:hover {
+            background: #00bcd4;
+        }
+    }
+}
+
+section {
+    width: 1500px;
+    margin: 10px auto;
+    display: flex;
+    position: relative;
+    .section-img {
+        width: 900px;
+        height: 500px;
+        // background: #000;
+        img {
+            // margin-left: 200px;
+            width: 500px;
+            height: 500px;
+        }
+        #zoom {
+            width: 200px;
+            height: 200px;
+            background: #000;
+            position: absolute;
+            top: 0;
+        }
+    }
+    #dabox {
+        width: 500px;
+        height: 500px;
+        background: #000;
+        opacity: 0.5;
+        position: absolute;
+        left: 600px;
+        top: 0;
+        z-index: 9;
+    }
+    .section-right {
+        width: 500px;
+        padding: 50px 20px;
+        border: 1px solid red;
+        h3 {
+            font-size: 30px;
+            line-height: 80px;
+            span {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-size: 20px;
+            line-height: 200px;
+        }
+        div {
+            position: relative;
+            b {
+                font-size: 34px;
+                line-height: 80px;
+                position: absolute;
+                top: 70px;
+                color: #f60;
+            }
+            input {
+                border: 0;
+                color: #fff;
+                font-size: 30px;
+                background: #f60;
+                display: block;
+                width: 300px;
+                height: 50px;
+                position: absolute;
+                top: 80px;
+                right: 0px;
+            }
+        }
+    }
+}

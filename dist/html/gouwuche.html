@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <style>
+        div {
+            text-align: center;
+            width: 600px;
+        }
+        
+        #tou {
+            padding: 0;
+            width: 1800px;
+            border: 1px solid red;
+            border-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+        
+        p {
+            text-align: center;
+            width: 100%;
+        }
+        
+        #cartList {
+            padding: 0;
+            width: 1800px;
+            height: 1000px;
+            border: 1px solid red;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+            line-height: 200px;
+            width: 1800px;
+            height: 200px;
+            /* background: pink; */
+            display: flex;
+            position: relative;
+        }
+        
+        input {
+            margin-right: 50px;
+        }
+        
+        img {
+            height: 200px;
+        }
+        
+        button {
+            position: absolute;
+            top: 80px;
+            left: 1750px;
+        }
+        
+        span {
+            border: 1px solid pink;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="tou">
+
+        <p>全选<input type="checkbox" id="quanxuan">商品名称</p>
+        <p>商品图片</p>
+        <p>商品介绍</p>
+        <p>商品数量</p>
+        <p>商品价格</p>
+        <p id="zongjia">商品总价</p>
+    </div>
+    <div id="cartList">
+    </div>
+    <script src="../js/jquery.1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/gouwuche.js"></script>
+</body>
+
+</html>

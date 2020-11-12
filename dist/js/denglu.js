@@ -17,9 +17,17 @@
          }, function(data) {
              if (data.code == 1) {
 
-                 localStorage.setItem("username", data.data["username"]);
-                 localStorage.setItem("UID", data.data["id"]);
-                 localStorage.setItem("login", 1)
+                 if ($("#checkbox") == true) {
+                     $.cookie("uid", data.data.id, { expires: 7, path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("token", data.data.token, { expires: 7, path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("username", $("#phone").val(), { expires: 7, path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("password", $("#password").val(), { expires: 7, path: "/", domain: "127.0.0.1", domain: "localhost" })
+                 } else {
+                     $.cookie("uid", data.data.id, { path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("token", data.data.token, { path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("username", $("#phone").val(), { path: "/", domain: "127.0.0.1", domain: "localhost" })
+                     $.cookie("password", $("#password").val(), { path: "/", domain: "127.0.0.1", domain: "localhost" })
+                 }
                  location.href = "http://localhost:8080/index.html";
 
              } else {

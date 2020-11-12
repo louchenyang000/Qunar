@@ -13,9 +13,10 @@
 <body>
     <header>
         <div class="header-top">
-            <span>请
-                <a href="http://127.0.0.1:51571/dist/html/denglu.html"> 登录 </a>
-                或<a href="http://127.0.0.1:51571/dist/html/zhuce.html"> 免费注册 </a>
+            <span id="username">
+                <!-- 请 
+                <a href="html/denglu.html"> 登录 </a>
+                或<a href="html/zhuce.html"> 免费注册 </a> -->
             </span><i class="iconfont iconshu"></i>
             <span><a href="">
                 <b class="xinxi"></b> 消息中心
@@ -239,10 +240,13 @@
             <div class="main-right">
             </div>
         </main>
-        <div class="subNav">
-            <span class="nav-border">国内低价机票</span><span>国际·港澳台低价航线(单程)</span><span>国际港澳台低价(往返)</span><a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
+        <div class="subNav" id="subNav">
+            <span class="nav-border">国内低价机票</span>
+            <span>国际·港澳台低价航线(单程)</span>
+            <span>国际港澳台低价(往返)</span>
+            <a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
         </div>
-        <section>
+        <section class="section">
             <div>
                 <a href="">
                     <span>北京</span><i class="iconfont icondanchengduan"></i><span>昆明</span>
@@ -304,8 +308,10 @@
                     <strong>￥340<span style="font-size:14px;font-weight: 200;"> 起 <em>2.7折</em></span></strong><b>立抢</b></a>
             </div>
         </section>
+        <div class="section"></div>
+        <div class="section"></div>
 
-        <div class="subNav">
+        <div class="subNav" id="subNav1">
             <span class="nav-border">国内酒店必住榜</span><span>国内酒店推荐</span><a href=""><span>更多低价机票</span><i class="iconfont iconyou"></i></a>
         </div>
         <div class="photos">
@@ -478,7 +484,7 @@
                 </div>
             </div>
             <div class="introduce">
-                <figure>
+                <!-- <figure>
                     <a href="">
                         <img src="images/sls.jpg" alt="">
                         <h4>少林寺</h4>
@@ -533,7 +539,7 @@
                         <h4>竹林长寿山景区</h4>
                         <p>山势雄伟，美不胜收</p>
                         <b>￥89.1</b></a>
-                </figure>
+                </figure> -->
             </div>
         </div>
         <div class="slideshow">
@@ -818,7 +824,9 @@
     <script src="js/jquery.1.11.3.js"></script>
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/index.js"></script>
+    <!-- <script src="js/jiekou.js"></script> -->
 
     <!-- Initialize Swiper -->
     <script>
