@@ -68,7 +68,7 @@ window.onload = function() {
                             "pnum": 1
                         }).then(i => {
                             console.log(i);
-                            location.href = "../html/gouwuche.html?pid=" + data.data.uid
+                            location.href = "../html/gouwuche.html"
                         })
                     })
                 })
